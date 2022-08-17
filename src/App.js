@@ -1,26 +1,23 @@
 import React, { useState } from 'react';
 import GuessingGame from './GuessingGame';
+// import usePersistence from './usePersistence';
 
 function App() {
-  const [guess, setGuess] = useState([])
+  // const [per, setPer] = usePersistence([])
+  // const [selectedContact, setSelectedContact] = usePersistence('selectedContact', null)
 
-
-  const handleGuess = (number) => {
-
-    setGuess(guess.concat(number))
-
-  }
-
-  function log(){
-    return(
-      <>
-      </>
-    )
-  }
+  //  function handleNewNum(number){
+  //   setPer(number.concat(number))
+  //  }
+  
+  //  function handleGuess(theNumber) {
+  //   setSelectedContact(theNumber)
+  //   setPer(count)
+  // }
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <GuessingGame onGuess={handleGuess} onReset={log}/>
+      <GuessingGame  />
     </div>
   );
 }
